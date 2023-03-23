@@ -1,3 +1,0 @@
-usar esse comando para buildar pro meu repositório github
-
-ng build --prod --base-href=/Discounts.App.Web/
