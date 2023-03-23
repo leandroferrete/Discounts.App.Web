@@ -1,0 +1,15 @@
+<div class="categories-catalog">
+    <div class="row" *ngFor="let letter of letters">
+        <!-- <div class="col letter-item">
+            <h2>{{letter}}</h2>
+        </div> -->
+        <div class="categories-list">
+            <div *ngFor="let category of categories | filterCategoriesByLetter:letter">
+                <div class="category-item" 
+                    [routerLink]="['/home']" [queryParams]="{categoryId: category.id}">
+                    <b>{{category.name}}</b><br><span>{{category.hasOffer}} promoções disponíveis</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

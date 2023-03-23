@@ -1,0 +1,61 @@
+.navbar-light .navbar-brand {
+    color: white;
+    font-weight: bold;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    font-weight: bold;
+}
+
+.navbar-brand i {
+    font-size: 40px;
+}
+
+.dropdown-menu {
+    background-color: #E62020;
+}
+
+.dropdown-item {
+    color: white;
+    font-weight: 500;
+}
+
+.search-container button {
+    background: transparent;
+    border: white;
+    color: white;
+}
+
+.category-icon
+{
+    width: 20px;
+    color: white;
+}
+
+.store-icon
+{
+    width: 20px;
+}
+
+/* Fixa a navbar apenas no celular */
+@media (max-width: 767.98px) {
+    .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 2;
+    }
+
+    .dropdown-menu{
+        background-color: #c11717;
+    }
+
+    .navbar-light .navbar-toggler{
+        border-color: transparent;
+    }
+
+    .navbar-light .navbar-toggler-icon{
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23fff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+}

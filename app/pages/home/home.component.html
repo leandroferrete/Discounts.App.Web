@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row row-cols-1 row-cols-md-3 g-4 products-catalog">
+        <div class="col-xs-12 col-lg-3 product-card" *ngFor="let offer of resultOffers?.offers">
+            <div class="card h-100">
+                <img src='{{offer.thumbnail}}' class="card-img-top" alt="...">
+                <div class="card-body">
+                    <div style="text-align:center">
+                        <img class="store-thumbnail" src='{{offer.store.thumbnail}}'>
+                    </div>
+                    <h5 class="card-title">{{offer.name | slice:0:90 }}{{ offer.name.length > 90 ? '...' : '' }}</h5>
+                    <p class="product-price-from">{{offer.priceFrom | currency : 'BRL'}}</p>
+                    <p class="card-text product-price">{{offer.price | currency : 'BRL'}}</p>
+                    <a href='{{offer.link}}' class="btn btn-desconto">QUERO ESSA OFERTA</a>
+                </div>
+                <div class="card-footer">
+                    <div class="share-buttons">
+                        <a (click)="copyLink(offer.link)" aria-hidden="true"><i class="fa fa-link"></i></a>
+                        <a [href]="getSafeUrlWhatApp(offer.link)" data-action="share/whatsapp/share"><i
+                                class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                        <a [href]="getSafeUrlTelegram(offer.link)"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

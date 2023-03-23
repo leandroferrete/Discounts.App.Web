@@ -1,0 +1,61 @@
+.letter-item {
+    cursor: pointer;
+    font-family: "SF Pro Display", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 23px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    color: rgb(39, 42, 44);
+    border-bottom: 1px solid rgb(242, 244, 246);
+    padding: 24px 0px 16px 32px;
+}
+
+.letter-item h2 {
+    font-size: 20px;
+}
+
+.stores-list{
+    margin-top: 20px;
+}
+
+.stores-list ul{
+    display: inline-flex;
+    margin-left: -1.5rem;
+    list-style-type: none;
+}
+
+.stores-list li{
+    margin-left: 10px;
+}
+
+.stores-list li span{
+    font-size: 14px;
+    /* color: #949494; */
+    color: #e62020;
+    font-weight: 500;
+}
+
+.store-logo {
+    overflow: hidden;
+    border-radius: 50%;
+    width: 55px;
+    min-width: 50px;
+    height: 53px;
+    position: relative;
+    border: 2px solid rgb(242,244,246);
+}
+
+.store-item{
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.store-item a {
+    font-size: 17px;
+    color: rgb(39, 42, 44) !important;
+    text-decoration: none !important;
+    font-weight: 500;
+}
